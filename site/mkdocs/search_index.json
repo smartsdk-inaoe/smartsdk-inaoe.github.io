@@ -1,0 +1,154 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Smart Security Application\n\n\nIntroduction\n\n\nTaking care of events happening in a video surveillance area is a complex task. The security system cameras are sending visual information to the main system online and the end-user (commonly a security guard) could not be able to pay attention to all the visual information.\n\n\n\n\nThe Smart Security application aims to support the security guard to prevent risk situations and consequently improve the quality of life of the people who live in the surveillance area.\n\n\nThe Smart Security application will focus on detecting and analyzing security risk such as, theft, access controls, people detection, fights, crowd analysis, etc., through the combination of video cameras and mobile sensors, in both, indoor and outdoor scenarios, for instance, parking lots and buildings. \n\n\nAudience\n\n\n\u2794   Users that want to test the application.\n\n\n\u2794   Developers and Knowledge modellers interested into contributing to the Smart Security Application.",
+            "title": "Home"
+        },
+        {
+            "location": "/#smart-security-application",
+            "text": "",
+            "title": "Smart Security Application"
+        },
+        {
+            "location": "/#introduction",
+            "text": "Taking care of events happening in a video surveillance area is a complex task. The security system cameras are sending visual information to the main system online and the end-user (commonly a security guard) could not be able to pay attention to all the visual information.   The Smart Security application aims to support the security guard to prevent risk situations and consequently improve the quality of life of the people who live in the surveillance area.  The Smart Security application will focus on detecting and analyzing security risk such as, theft, access controls, people detection, fights, crowd analysis, etc., through the combination of video cameras and mobile sensors, in both, indoor and outdoor scenarios, for instance, parking lots and buildings.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#audience",
+            "text": "\u2794   Users that want to test the application.  \u2794   Developers and Knowledge modellers interested into contributing to the Smart Security Application.",
+            "title": "Audience"
+        },
+        {
+            "location": "/userManual/",
+            "text": "Manual of the Smart Security Application\n\n\nRequirements\n\n\nFor an optimal performance, \nGoogle Chrome\n browser is recommended.  \n\n\nInterface\n\n\nThe Graphical User interface was build using the \nWeb2Py\n Framework, which allows the fast development of Web Applications with Python language as its core. This framework uses the MVC (Model-View-Controller) architectural pattern to build up web applications.\n\n\nCurrent prototype offers five differents views to the user: \nLogin\n, \nMain\n, \nMultiple Cameras\n, \nSearch\n and \nManagement\n.\n\n\nUser registration\n\n\nLogin page forbids the access of unauthorized users to the system, blocking both view and management privileges. In order to be a user of the system a sign up process is required by the system administrator. \n\n\nTo register a new user:\n\n\n\n\n\n\nClik on the \nLogin\n menu and select the the \nSign up\n option (right upper corner of the Login view).\n\n\n\n\n\n\nIn the \nLogin\n view we must indicate the user name and the password of the new user.\n\n\n\n\n\n\n\n\nThe information is sent to the system administrator to authorize the acces to the new user.\n\n\nSign in\n\n\nOnce that we are a registered user, we are able to acces to the system using also the \nLogin\n view.\n\n\nTo acces the system:\n\n\n\n\n\n\nClick on the \nLogin\n option and select the the \nLog in\n option (right upper corner of the \nLogin\n view).\n\n\n\n\n\n\nIn the \nLogin\n view we must indicate the user name and the password of the user.\n\n\n\n\n\n\nRecording video by motion\n\n\nBy default the system is able to automatic video recording by motion detection in the scene.\n\n\nVisualize a single camera\n\n\nIn order to visualize a specific camera:\n\n\n\n\n\n\nClick on the \nMain\n tab\n\n\n\n\n\n\nWhen the \nMain\n view is visualized, in the bottom scrollbar select the camera.\n\n\n\n\n\n\n\n\nVisualize the last events detected (In progress).\n\n\nEvery activity detected by the system is reported and visualized to the user. To see the last activity detected:\n\n\n\n\n\n\nClick on the \nMain\n tab.\n\n\n\n\n\n\nGo to the \nLast Activity\n textbox (right side of the Main View ).\n\n\n\n\n\n\nVizualize multiple cameras\n\n\nFor a general overview, the system is capable to show all the cameras in the \nMultiple Cameras\n View. \n\n\n\n\n\n\nClick on the \nMultiple Cameras\n tab.\n\n\n\n\n\n\nAll the cameras registered in the system are visible.\n\n\n\n\n\n\n\n\nSearch\n\n\nThe system allows the user to search segments of video associated with events detected, both automatic detections and manual recordings. Two main criteria define the search: by annotation or by image file containing a face.\n\n\n\n\nSearching by Annotation (Filters)\n\n\nThis  search option contains a form to search by event type (Person or vehicle detected), by date of detection, and/or by the id of the camera in which the event was detected.\n\n\nIn order to search videos by Annotation:\n\n\n\n\n\n\nClick on the \nSearch\n tab.\n\n\n\n\n\n\nSelect the \nFilters\n radio button.\n\n\n\n\n\n\nOn the \nSearch\n view define the search criteria.\n\n\n\n\n\n\nEvent Type\n: Select the type o event that you want to search. If no one option is selected all type of events will be shown.\n\n\n\n\n\n\nCamera id\n: Select the camera id desired.\n\n\n\n\n\n\nDate\n: Two calendars are available in order to define a date criteria (Start and End).\n\n\n\n\n\n\nOnce the criteria is defined, click on the \nFilter Events\n button.\n\n\n\n\n\n\nThe search result is visualized on the bottom textbox.\n\n\n\n\n\n\nSearching by Image File (Face)\n\n\nThis search option allows to the user search a person by face.\n\n\nIn order to search a person (by face) in the video repository:\n\n\n\n\n\n\nClick on the \nSearch\n tab.\n\n\n\n\n\n\nSelect the \nFace\n radio button.\n\n\n\n\n\n\nClick on the \nFile\n button.\n\n\n\n\n\n\nSelect the file containing the face of the person to search.\n\n\n\n\n\n\nOnce the file is selected, click on the \nFilter Events\n button.\n\n\n\n\n\n\nThe search result is visualized on the bottom textbox.\n\n\n\n\n\n\nSettings\n\n\n\n\nTo configure how the system higlight the event detected on the streaming:\n\n\n\n\n\n\nClick on the \nManagement\n menu.\n\n\n\n\n\n\nSelect the \nFilters\n option.\n\n\n\n\n\n\nIn the \nConfigure Filters\n section, select the \nEvent\n, \nText tag\n and \nColor\n desired to visualize on the streaming when the event is detected.\n\n\n\n\n\n\nClick on the \nSubmit\n button.\n\n\n\n\n\n\nCameras management\n\n\n\n\nAdd a new camera\n\n\n\n\n\n\nClick  on the \nManagement\n menu.\n\n\n\n\n\n\nSelect the \nCameras\n option.\n\n\n\n\n\n\nIn the \nCameras Management\n section, click on the \nAdd Camera\n button.\n\n\n\n\n\n\nTo indicate the \nid\n of the new camera.\n\n\n\n\n\n\nTo indicate the rstp \nurl\n of the new camera.\n\n\n\n\n\n\nClick on the \nSubmit\n button.\n\n\n\n\n\n\nUsers management (in progress)",
+            "title": "User Manual"
+        },
+        {
+            "location": "/userManual/#manual-of-the-smart-security-application",
+            "text": "",
+            "title": "Manual of the Smart Security Application"
+        },
+        {
+            "location": "/userManual/#requirements",
+            "text": "For an optimal performance,  Google Chrome  browser is recommended.",
+            "title": "Requirements"
+        },
+        {
+            "location": "/userManual/#interface",
+            "text": "The Graphical User interface was build using the  Web2Py  Framework, which allows the fast development of Web Applications with Python language as its core. This framework uses the MVC (Model-View-Controller) architectural pattern to build up web applications.  Current prototype offers five differents views to the user:  Login ,  Main ,  Multiple Cameras ,  Search  and  Management .",
+            "title": "Interface"
+        },
+        {
+            "location": "/userManual/#user-registration",
+            "text": "Login page forbids the access of unauthorized users to the system, blocking both view and management privileges. In order to be a user of the system a sign up process is required by the system administrator.   To register a new user:    Clik on the  Login  menu and select the the  Sign up  option (right upper corner of the Login view).    In the  Login  view we must indicate the user name and the password of the new user.     The information is sent to the system administrator to authorize the acces to the new user.",
+            "title": "User registration"
+        },
+        {
+            "location": "/userManual/#sign-in",
+            "text": "Once that we are a registered user, we are able to acces to the system using also the  Login  view.  To acces the system:    Click on the  Login  option and select the the  Log in  option (right upper corner of the  Login  view).    In the  Login  view we must indicate the user name and the password of the user.",
+            "title": "Sign in"
+        },
+        {
+            "location": "/userManual/#recording-video-by-motion",
+            "text": "By default the system is able to automatic video recording by motion detection in the scene.",
+            "title": "Recording video by motion"
+        },
+        {
+            "location": "/userManual/#visualize-a-single-camera",
+            "text": "In order to visualize a specific camera:    Click on the  Main  tab    When the  Main  view is visualized, in the bottom scrollbar select the camera.",
+            "title": "Visualize a single camera"
+        },
+        {
+            "location": "/userManual/#visualize-the-last-events-detected-in-progress",
+            "text": "Every activity detected by the system is reported and visualized to the user. To see the last activity detected:    Click on the  Main  tab.    Go to the  Last Activity  textbox (right side of the Main View ).",
+            "title": "Visualize the last events detected (In progress)."
+        },
+        {
+            "location": "/userManual/#vizualize-multiple-cameras",
+            "text": "For a general overview, the system is capable to show all the cameras in the  Multiple Cameras  View.     Click on the  Multiple Cameras  tab.    All the cameras registered in the system are visible.",
+            "title": "Vizualize multiple cameras"
+        },
+        {
+            "location": "/userManual/#search",
+            "text": "The system allows the user to search segments of video associated with events detected, both automatic detections and manual recordings. Two main criteria define the search: by annotation or by image file containing a face.",
+            "title": "Search"
+        },
+        {
+            "location": "/userManual/#searching-by-annotation-filters",
+            "text": "This  search option contains a form to search by event type (Person or vehicle detected), by date of detection, and/or by the id of the camera in which the event was detected.  In order to search videos by Annotation:    Click on the  Search  tab.    Select the  Filters  radio button.    On the  Search  view define the search criteria.    Event Type : Select the type o event that you want to search. If no one option is selected all type of events will be shown.    Camera id : Select the camera id desired.    Date : Two calendars are available in order to define a date criteria (Start and End).    Once the criteria is defined, click on the  Filter Events  button.    The search result is visualized on the bottom textbox.",
+            "title": "Searching by Annotation (Filters)"
+        },
+        {
+            "location": "/userManual/#searching-by-image-file-face",
+            "text": "This search option allows to the user search a person by face.  In order to search a person (by face) in the video repository:    Click on the  Search  tab.    Select the  Face  radio button.    Click on the  File  button.    Select the file containing the face of the person to search.    Once the file is selected, click on the  Filter Events  button.    The search result is visualized on the bottom textbox.",
+            "title": "Searching by Image File (Face)"
+        },
+        {
+            "location": "/userManual/#settings",
+            "text": "To configure how the system higlight the event detected on the streaming:    Click on the  Management  menu.    Select the  Filters  option.    In the  Configure Filters  section, select the  Event ,  Text tag  and  Color  desired to visualize on the streaming when the event is detected.    Click on the  Submit  button.",
+            "title": "Settings"
+        },
+        {
+            "location": "/userManual/#cameras-management",
+            "text": "",
+            "title": "Cameras management"
+        },
+        {
+            "location": "/userManual/#add-a-new-camera",
+            "text": "Click  on the  Management  menu.    Select the  Cameras  option.    In the  Cameras Management  section, click on the  Add Camera  button.    To indicate the  id  of the new camera.    To indicate the rstp  url  of the new camera.    Click on the  Submit  button.",
+            "title": "Add a new camera"
+        },
+        {
+            "location": "/userManual/#users-management-in-progress",
+            "text": "",
+            "title": "Users management (in progress)"
+        },
+        {
+            "location": "/development/",
+            "text": "Documentation of the Smart Security Application\n\n\nRequirements\n\n\nCurrent version of the system has the next hardware requirements for pre-processing.\n\n\nAt least 32 GB of RAM.\nIntel core i7, 3.4 Ghz.\nAt least 500 Gb of hd (Recommended 1TB).\n\n\n\nSoftware requirements:\n\n\nUbuntu 14.04 LTS\nKurento Media Server 6.1.1\nMaven 3.0.5\nJava 1.8.0.131\nWeb2py\nOpenCV 2.4\n\n\n\nArchitecture\n\n\nThe Smart Security architecture is being developed to detect security risk events based on the video stream acquisition from a set of sensors (e.g. video cameras) connected to a network. It is then analyzed to detect, label, store and highlight security-relevant events automatically.\n\n\n\n\nTo capture the incoming video streaming from IP cameras we are using Kurento GE through the Kurento Media Server (KMS). The KMS is based on Media Elements (ME) and Media Pipelines. The former consists of modules that perform a specific action on a media stream receiving or sending media from other elements, the latter is a chain of media elements. For the security application we have developed \u00a0a set of filters (ME) capable of subtracting objects (people and vehicles) in motion within a scene, classify such objects and track them. From this information, we are developing algorithms that can detect security events. All the data generated from the stream processing is sent to the Orion Context Broker through its connection with Kurento. Furthermore, the data from the detected security events is stored into Cosmos Big Data GE.\n\n\nBackend Smart Security Application\n\n\nThe Back End component is the manager of the streaming coming from the cameras. Interatction with the interface is required in order able or disable capabilities and to notify to the user the events detected.\n\n\nThe application's main contribution focus on the development of algorithms to detect differente types of visual events. Current version is able to detect movement (based on SubSENSE for blob detetecion), people and vehicles.\n\n\nFrontend Smart Security Application\n\n\nIn order to visualize all the information generated by the Backend a GUI based on Web2py is developed. Main functionalities are regarding to Events (person and vehicle), User profile and notifications management. The GUI designed allows to the user visualize the straming and the events detected online. Also a complete search functionalitie is being developed.",
+            "title": "Development"
+        },
+        {
+            "location": "/development/#documentation-of-the-smart-security-application",
+            "text": "",
+            "title": "Documentation of the Smart Security Application"
+        },
+        {
+            "location": "/development/#requirements",
+            "text": "Current version of the system has the next hardware requirements for pre-processing.  At least 32 GB of RAM.\nIntel core i7, 3.4 Ghz.\nAt least 500 Gb of hd (Recommended 1TB).  Software requirements:  Ubuntu 14.04 LTS\nKurento Media Server 6.1.1\nMaven 3.0.5\nJava 1.8.0.131\nWeb2py\nOpenCV 2.4",
+            "title": "Requirements"
+        },
+        {
+            "location": "/development/#architecture",
+            "text": "The Smart Security architecture is being developed to detect security risk events based on the video stream acquisition from a set of sensors (e.g. video cameras) connected to a network. It is then analyzed to detect, label, store and highlight security-relevant events automatically.   To capture the incoming video streaming from IP cameras we are using Kurento GE through the Kurento Media Server (KMS). The KMS is based on Media Elements (ME) and Media Pipelines. The former consists of modules that perform a specific action on a media stream receiving or sending media from other elements, the latter is a chain of media elements. For the security application we have developed \u00a0a set of filters (ME) capable of subtracting objects (people and vehicles) in motion within a scene, classify such objects and track them. From this information, we are developing algorithms that can detect security events. All the data generated from the stream processing is sent to the Orion Context Broker through its connection with Kurento. Furthermore, the data from the detected security events is stored into Cosmos Big Data GE.",
+            "title": "Architecture"
+        },
+        {
+            "location": "/development/#backend-smart-security-application",
+            "text": "The Back End component is the manager of the streaming coming from the cameras. Interatction with the interface is required in order able or disable capabilities and to notify to the user the events detected.  The application's main contribution focus on the development of algorithms to detect differente types of visual events. Current version is able to detect movement (based on SubSENSE for blob detetecion), people and vehicles.",
+            "title": "Backend Smart Security Application"
+        },
+        {
+            "location": "/development/#frontend-smart-security-application",
+            "text": "In order to visualize all the information generated by the Backend a GUI based on Web2py is developed. Main functionalities are regarding to Events (person and vehicle), User profile and notifications management. The GUI designed allows to the user visualize the straming and the events detected online. Also a complete search functionalitie is being developed.",
+            "title": "Frontend Smart Security Application"
+        },
+        {
+            "location": "/about/",
+            "text": "About\n\n\nPartners\n\n\n\n\n\n\nInstituto Nacional de Astrof\u00edsica, \u00d3ptica y Electronica.\n\n\n\n\n\n\nInstituto Tecnol\u00f3gico y de Estudios Superiores de Monterrey.\n\n\n\n\n\n\nCentro Nacional de Investigaci\u00f3n y Desarrollo Tecnol\u00f3gico.",
+            "title": "About"
+        },
+        {
+            "location": "/about/#about",
+            "text": "",
+            "title": "About"
+        },
+        {
+            "location": "/about/#partners",
+            "text": "Instituto Nacional de Astrof\u00edsica, \u00d3ptica y Electronica.    Instituto Tecnol\u00f3gico y de Estudios Superiores de Monterrey.    Centro Nacional de Investigaci\u00f3n y Desarrollo Tecnol\u00f3gico.",
+            "title": "Partners"
+        }
+    ]
+}

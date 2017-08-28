@@ -1,0 +1,7 @@
+site_name: Smart Security Documentation
+pages:
+    - Home: index.md
+    - User Manual: userManual.md
+    - Development: development.md
+    - About: about.md
+theme: readthedocs

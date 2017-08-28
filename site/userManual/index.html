@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>User Manual - Smart Security Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User Manual";
+    var mkdocs_page_input_path = "userManual.md";
+    var mkdocs_page_url = "/userManual/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Smart Security Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">User Manual</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#manual-of-the-smart-security-application">Manual of the Smart Security Application</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#requirements">Requirements</a></li>
+        
+            <li><a class="toctree-l3" href="#interface">Interface</a></li>
+        
+            <li><a class="toctree-l3" href="#user-registration">User registration</a></li>
+        
+            <li><a class="toctree-l3" href="#sign-in">Sign in</a></li>
+        
+            <li><a class="toctree-l3" href="#recording-video-by-motion">Recording video by motion</a></li>
+        
+            <li><a class="toctree-l3" href="#visualize-a-single-camera">Visualize a single camera</a></li>
+        
+            <li><a class="toctree-l3" href="#visualize-the-last-events-detected-in-progress">Visualize the last events detected (In progress).</a></li>
+        
+            <li><a class="toctree-l3" href="#vizualize-multiple-cameras">Vizualize multiple cameras</a></li>
+        
+            <li><a class="toctree-l3" href="#search">Search</a></li>
+        
+            <li><a class="toctree-l3" href="#settings">Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#cameras-management">Cameras management</a></li>
+        
+            <li><a class="toctree-l3" href="#users-management-in-progress">Users management (in progress)</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../development/">Development</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Smart Security Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>User Manual</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="manual-of-the-smart-security-application">Manual of the Smart Security Application</h1>
+<h2 id="requirements">Requirements</h2>
+<p>For an optimal performance, <code>Google Chrome</code> browser is recommended.  </p>
+<h2 id="interface">Interface</h2>
+<p>The Graphical User interface was build using the <code>Web2Py</code> Framework, which allows the fast development of Web Applications with Python language as its core. This framework uses the MVC (Model-View-Controller) architectural pattern to build up web applications.</p>
+<p>Current prototype offers five differents views to the user: <code>Login</code>, <code>Main</code>, <code>Multiple Cameras</code>, <code>Search</code> and <code>Management</code>.</p>
+<h2 id="user-registration">User registration</h2>
+<p>Login page forbids the access of unauthorized users to the system, blocking both view and management privileges. In order to be a user of the system a sign up process is required by the system administrator. </p>
+<p>To register a new user:</p>
+<ol>
+<li>
+<p>Clik on the <code>Login</code> menu and select the the <code>Sign up</code> option (right upper corner of the Login view).</p>
+</li>
+<li>
+<p>In the <code>Login</code> view we must indicate the user name and the password of the new user.</p>
+</li>
+</ol>
+<p><img alt="Login" src="../images/login.png" /></p>
+<p>The information is sent to the system administrator to authorize the acces to the new user.</p>
+<h2 id="sign-in">Sign in</h2>
+<p>Once that we are a registered user, we are able to acces to the system using also the <code>Login</code> view.</p>
+<p>To acces the system:</p>
+<ol>
+<li>
+<p>Click on the <code>Login</code> option and select the the <code>Log in</code> option (right upper corner of the <code>Login</code> view).</p>
+</li>
+<li>
+<p>In the <code>Login</code> view we must indicate the user name and the password of the user.</p>
+</li>
+</ol>
+<h2 id="recording-video-by-motion">Recording video by motion</h2>
+<p>By default the system is able to automatic video recording by motion detection in the scene.</p>
+<h2 id="visualize-a-single-camera">Visualize a single camera</h2>
+<p>In order to visualize a specific camera:</p>
+<ol>
+<li>
+<p>Click on the <code>Main</code> tab</p>
+</li>
+<li>
+<p>When the <code>Main</code> view is visualized, in the bottom scrollbar select the camera.</p>
+</li>
+</ol>
+<p><img alt="Main" src="../images/main.png" /></p>
+<h2 id="visualize-the-last-events-detected-in-progress">Visualize the last events detected (In progress).</h2>
+<p>Every activity detected by the system is reported and visualized to the user. To see the last activity detected:</p>
+<ol>
+<li>
+<p>Click on the <code>Main</code> tab.</p>
+</li>
+<li>
+<p>Go to the <code>Last Activity</code> textbox (right side of the Main View ).</p>
+</li>
+</ol>
+<h2 id="vizualize-multiple-cameras">Vizualize multiple cameras</h2>
+<p>For a general overview, the system is capable to show all the cameras in the <code>Multiple Cameras</code> View. </p>
+<ol>
+<li>
+<p>Click on the <code>Multiple Cameras</code> tab.</p>
+</li>
+<li>
+<p>All the cameras registered in the system are visible.</p>
+</li>
+</ol>
+<p><img alt="Multiple" src="../images/multipleCameras.png" /></p>
+<h2 id="search">Search</h2>
+<p>The system allows the user to search segments of video associated with events detected, both automatic detections and manual recordings. Two main criteria define the search: by annotation or by image file containing a face.</p>
+<p><img alt="Search" src="../images/search.png" /></p>
+<h3 id="searching-by-annotation-filters">Searching by Annotation (Filters)</h3>
+<p>This  search option contains a form to search by event type (Person or vehicle detected), by date of detection, and/or by the id of the camera in which the event was detected.</p>
+<p>In order to search videos by Annotation:</p>
+<ol>
+<li>
+<p>Click on the <code>Search</code> tab.</p>
+</li>
+<li>
+<p>Select the <code>Filters</code> radio button.</p>
+</li>
+<li>
+<p>On the <code>Search</code> view define the search criteria.</p>
+</li>
+<li>
+<p><code>Event Type</code>: Select the type o event that you want to search. If no one option is selected all type of events will be shown.</p>
+</li>
+<li>
+<p><code>Camera id</code>: Select the camera id desired.</p>
+</li>
+<li>
+<p><code>Date</code>: Two calendars are available in order to define a date criteria (Start and End).</p>
+</li>
+<li>
+<p>Once the criteria is defined, click on the <code>Filter Events</code> button.</p>
+</li>
+<li>
+<p>The search result is visualized on the bottom textbox.</p>
+</li>
+</ol>
+<h3 id="searching-by-image-file-face">Searching by Image File (Face)</h3>
+<p>This search option allows to the user search a person by face.</p>
+<p>In order to search a person (by face) in the video repository:</p>
+<ol>
+<li>
+<p>Click on the <code>Search</code> tab.</p>
+</li>
+<li>
+<p>Select the <code>Face</code> radio button.</p>
+</li>
+<li>
+<p>Click on the <code>File</code> button.</p>
+</li>
+<li>
+<p>Select the file containing the face of the person to search.</p>
+</li>
+<li>
+<p>Once the file is selected, click on the <code>Filter Events</code> button.</p>
+</li>
+<li>
+<p>The search result is visualized on the bottom textbox.</p>
+</li>
+</ol>
+<h2 id="settings">Settings</h2>
+<p><img alt="Filters" src="../images/managementFilters.png" /></p>
+<p>To configure how the system higlight the event detected on the streaming:</p>
+<ol>
+<li>
+<p>Click on the <code>Management</code> menu.</p>
+</li>
+<li>
+<p>Select the <code>Filters</code> option.</p>
+</li>
+<li>
+<p>In the <code>Configure Filters</code> section, select the <code>Event</code>, <code>Text tag</code> and <code>Color</code> desired to visualize on the streaming when the event is detected.</p>
+</li>
+<li>
+<p>Click on the <code>Submit</code> button.</p>
+</li>
+</ol>
+<h2 id="cameras-management">Cameras management</h2>
+<p><img alt="Cameras" src="../images/managementCameras.png" /></p>
+<h3 id="add-a-new-camera">Add a new camera</h3>
+<ol>
+<li>
+<p>Click  on the <code>Management</code> menu.</p>
+</li>
+<li>
+<p>Select the <code>Cameras</code> option.</p>
+</li>
+<li>
+<p>In the <code>Cameras Management</code> section, click on the <code>Add Camera</code> button.</p>
+</li>
+<li>
+<p>To indicate the <code>id</code> of the new camera.</p>
+</li>
+<li>
+<p>To indicate the rstp <code>url</code> of the new camera.</p>
+</li>
+<li>
+<p>Click on the <code>Submit</code> button.</p>
+</li>
+</ol>
+<h2 id="users-management-in-progress">Users management (in progress)</h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../development/" class="btn btn-neutral float-right" title="Development">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../development/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

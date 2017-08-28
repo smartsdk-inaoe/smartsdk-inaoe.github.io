@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Development - Smart Security Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Development";
+    var mkdocs_page_input_path = "development.md";
+    var mkdocs_page_url = "/development/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Smart Security Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../userManual/">User Manual</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Development</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#documentation-of-the-smart-security-application">Documentation of the Smart Security Application</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#requirements">Requirements</a></li>
+        
+            <li><a class="toctree-l3" href="#architecture">Architecture</a></li>
+        
+            <li><a class="toctree-l3" href="#backend-smart-security-application">Backend Smart Security Application</a></li>
+        
+            <li><a class="toctree-l3" href="#frontend-smart-security-application">Frontend Smart Security Application</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Smart Security Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Development</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="documentation-of-the-smart-security-application">Documentation of the Smart Security Application</h1>
+<h2 id="requirements">Requirements</h2>
+<p>Current version of the system has the next hardware requirements for pre-processing.</p>
+<pre><code>At least 32 GB of RAM.
+Intel core i7, 3.4 Ghz.
+At least 500 Gb of hd (Recommended 1TB).
+</code></pre>
+<p>Software requirements:</p>
+<pre><code>Ubuntu 14.04 LTS
+Kurento Media Server 6.1.1
+Maven 3.0.5
+Java 1.8.0.131
+Web2py
+OpenCV 2.4
+</code></pre>
+<h2 id="architecture">Architecture</h2>
+<p>The Smart Security architecture is being developed to detect security risk events based on the video stream acquisition from a set of sensors (e.g. video cameras) connected to a network. It is then analyzed to detect, label, store and highlight security-relevant events automatically.</p>
+<p><img alt="Architecture" src="../images/generalArchitecture.png" /></p>
+<p>To capture the incoming video streaming from IP cameras we are using Kurento GE through the Kurento Media Server (KMS). The KMS is based on Media Elements (ME) and Media Pipelines. The former consists of modules that perform a specific action on a media stream receiving or sending media from other elements, the latter is a chain of media elements. For the security application we have developed  a set of filters (ME) capable of subtracting objects (people and vehicles) in motion within a scene, classify such objects and track them. From this information, we are developing algorithms that can detect security events. All the data generated from the stream processing is sent to the Orion Context Broker through its connection with Kurento. Furthermore, the data from the detected security events is stored into Cosmos Big Data GE.</p>
+<h2 id="backend-smart-security-application">Backend Smart Security Application</h2>
+<p>The Back End component is the manager of the streaming coming from the cameras. Interatction with the interface is required in order able or disable capabilities and to notify to the user the events detected.</p>
+<p>The application's main contribution focus on the development of algorithms to detect differente types of visual events. Current version is able to detect movement (based on SubSENSE for blob detetecion), people and vehicles.</p>
+<h2 id="frontend-smart-security-application">Frontend Smart Security Application</h2>
+<p>In order to visualize all the information generated by the Backend a GUI based on Web2py is developed. Main functionalities are regarding to Events (person and vehicle), User profile and notifications management. The GUI designed allows to the user visualize the straming and the events detected online. Also a complete search functionalitie is being developed.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../userManual/" class="btn btn-neutral" title="User Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../userManual/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
