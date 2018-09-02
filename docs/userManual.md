@@ -1,4 +1,4 @@
-# Manual of the Smart Security Application
+# Manual of the Smart Security Application: ViVA
  
 ## Requirements
 
