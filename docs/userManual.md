@@ -1,4 +1,4 @@
-# Manual of the Smart Security Application: ViVA
+# Manual of ViVA
  
 ## Requirements
 
@@ -20,7 +20,7 @@ To register a new user:
 
 2. In the `Login` view we must indicate the user name and the password of the new user.
 
-![Login](images/login.png)
+![Login](images/signup.png)
 
  
 The information is sent to the system administrator to authorize the acces to the new user.
@@ -34,6 +34,8 @@ To acces the system:
 1. Click on the `Login` option and select the the `Log in` option (right upper corner of the `Login` view).
 
 2. In the `Login` view we must indicate the user name and the password of the user.
+
+![Login](images/login.png)
 
 ## Recording video by motion
 
@@ -55,7 +57,7 @@ Every activity detected by the system is reported and visualized to the user. To
 
 1. Click on the `Main` tab.
 
-2. Go to the `Last Activity` textbox (right side of the Main View ).
+2. Go to the `Last Activities` textbox (right side of the Main View ).
 
 
 ## Vizualize multiple cameras
@@ -64,13 +66,28 @@ For a general overview, the system is capable to show all the cameras in the `Mu
  
 1. Click on the `Multiple Cameras` tab.
 
-2. All the cameras registered in the system are visible.
+2. Select the `Grid` option
+
+3. All the cameras registered in the system are visible.
 
 ![Multiple](images/multipleCameras.png)
+
+## Map visualization
+
+1. Click on the `Multiple Cameras` tab.
+
+2. Select the `Map` option
+
+3. All the cameras registered in the system are visible on map.
+
+The pin color of the camera shows the priority of the last alerts received. Left click on the pin to see an small view of the video camera streaming. Right click onf the pin to see a list of the last alerts received.
+
+![Multiple](images/mapCams.png)
+
  
 ## Search
 
-The system allows the user to search segments of video associated with events detected, both automatic detections and manual recordings. Two main criteria define the search: by annotation or by image file containing a face.
+The system allows the user to search segments of video associated with events detected. Two main criteria define the search: by annotation or by image file containing a face.
 
 ![Search](images/search.png)
 
@@ -132,23 +149,27 @@ To configure how the system higlight the event detected on the streaming:
 
 ## Cameras management
 
+Curent version of the system only supports edition of camera info.
+
 ![Cameras](images/managementCameras.png)
 
-### Add a new camera
+
+### Edit cameras
 
 1. Click  on the `Management` menu.
 
 2. Select the `Cameras` option.
 
-3. In the `Cameras Management` section, click on the `Add Camera` button.
+3. In the `Cameras Management` section, click on the `Edit` button.
 
-4. To indicate the `id` of the new camera.
+4. To edit the `id` of the new camera.
 
-5. To indicate the rstp `url` of the new camera.
+5. To edit the rstp `url` of the new camera.
 
 6. Click on the `Submit` button.
 
-## Users management (in progress)
+7. Click on the `Apply Changes` button.
+
 
 
 
